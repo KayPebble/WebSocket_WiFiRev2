@@ -1,6 +1,7 @@
 /* WebSocket_WiFiRev2
- * Deriviative work from several of the builtin examples.
- * Markus Sattler's websockets library takes up 150% of the memory.
+ * Derivative work from several of the builtin examples.
+ * A minimal WebSocket implementation designed to fit the
+ * constrained flash and RAM available on the Uno WiFi Rev2.
  */
 
 String GUID = "258EAFA5-E914-47DA-95CA-C5AB0DC85B11";
