@@ -1,3 +1,5 @@
+#include <Arduino_BuiltIn.h>
+
 /* WebSocket_WiFiRev2
  * Derivative work from several of the builtin examples.
  * A minimal WebSocket implementation designed to fit the
@@ -50,7 +52,8 @@ String base64_encode(uint8_t * data, size_t length) {
 void setup() {
   //Initialize serial and wait for port to open:
   Serial.begin(9600);
-  while (!Serial) {
+  unsigned long serial_wait_start = millis();
+  while (!Serial && millis() - serial_wait_start < 2000) {
     ; // wait for serial port to connect. Needed for native USB port only
   }
 
