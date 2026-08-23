@@ -168,16 +168,6 @@ The sensor fields are AVR `float` values and are interpreted by the bundled page
 | `cencode.c`, `cencode_inc.h` | Public-domain Base64 implementation |
 | `libsha1.c`, `libsha1.h` | Public-domain SHA-1 implementation used by the handshake |
 
-## Upload warning observed during testing
-
-The successful 2026 upload printed this warning:
-
-```text
-avrdude: usbdev_open(): WARNING: failed to set configuration 1: Device or resource busy
-```
-
-Despite the warning, the upload completed and the sketch ran correctly. If an upload actually fails, close other serial-monitor processes, reconnect the board, confirm the selected board and port, and retry.
-
 ## License
 
 The project is released under the MIT License. See `LICENSE`.
